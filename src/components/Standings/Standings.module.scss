@@ -1,0 +1,160 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2em;
+    padding: 0px 2em 2em 2em;
+}
+
+.card {
+    background-color: #F8FAFC;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.sectionHeader {
+    padding-left: 1em;
+    padding-bottom: 1em;
+    font-size: 30px;
+}
+
+.selector {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    margin-left: 4em;
+
+    label {
+        padding: 1em 1em 0.25em 0em;
+        font-size: 22px;
+    }
+
+    select {
+        font-size: 18px;
+        width: 20em;
+        height: 42m;
+        background-color: #fc5903; /* Use secondary color for the select background */
+        color: #000000; /* Text color for better visibility */
+        border: none;
+        border-radius: 0.3em;
+        padding: 0.5em;
+        cursor: pointer;
+    }
+}
+
+.indivStanding {
+    background-color: #fc5903;
+    border-radius: 0.3em;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    .leftText {
+        padding-left: 18px;
+    }
+
+    .rightText {
+        padding-right: 18px;
+    }
+}
+
+.allOfficialsList {
+    a {
+        color: #000000; /* Adjust link color for better visibility */
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+    margin-left: 1em;
+    align-items: center;
+}
+
+.standingsList {
+    margin-left: 4em;
+
+    div {
+        width: 40%;
+        padding: 0.25em;
+        background-color: #fc5903; /* Use secondary color for the standings background */
+        color: #000000; /* Text color for better visibility */
+        border-radius: 0.3em;
+        margin-bottom: 0.5em;
+    }
+
+    a {
+        color: #000000; /* Adjust link color for better visibility */
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .standingsList {
+        margin-left: 1em;
+        margin-right: 1em;
+    
+        div {
+            width: 80%;
+            padding: 0.2em;
+            background-color: #fc5903; /* Use secondary color for the standings background */
+            color: #000000; /* Text color for better visibility */
+            border-radius: 0.3em;
+            margin-bottom: 0.5em;
+        }
+    
+        a {
+            color: #000000; /* Adjust link color for better visibility */
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .selector {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1em;
+        margin-left: 1em;
+        align-items: center;
+    
+        label {
+            padding: 1em 1em 0.25em 0em;
+            font-size: 22px;
+        }
+    
+        select {
+            font-size: 18px;
+            width: 80%;
+            height: 42m;
+            background-color: #fc5903; /* Use secondary color for the select background */
+            color: #000000; /* Text color for better visibility */
+            border: none;
+            border-radius: 0.3em;
+            padding: 0.5em;
+            cursor: pointer;
+        }
+    }
+}
+
+.container {
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+  }
+  
+  .containerDark {
+    background-color: #313131;
+  }

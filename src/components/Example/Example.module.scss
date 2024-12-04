@@ -1,0 +1,13 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2em;
+    padding: 2em;
+}
+
+.card {
+    background-color: #F8FAFC;
+    margin-bottom: 2em;
+    border-radius: 0.5em;
+    padding: 1em;
+}

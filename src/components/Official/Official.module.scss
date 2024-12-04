@@ -1,0 +1,167 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 1em;
+    padding: 0px 2em 2em 2em;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-gap: 0.5em;
+        padding: 0.35em 0.5em 0.35em 0.5em;
+    }
+}
+
+.card {
+    background-color: #d9dcdf;
+    border-radius: 0.2em;
+    padding: 0.25em;
+
+    div {
+        color: #10172A;
+    }
+}
+
+.sectionHeader {
+    padding-left: 1em;
+    font-size: 30px;
+}
+
+.refHeader {
+    display: flex;
+    padding: 2em;
+}
+
+@media (max-width: 768px) {
+    .refHeader {
+        padding: 0.5em;
+        flex-direction: column;
+    }
+}
+
+.refBaseInfo {
+    width: 50%;
+    display: flex;
+}
+
+.submitPhoto {
+    margin-bottom: 1em;
+    padding-left: 10px;
+    
+    a {
+        text-decoration: none;
+        color: #fc5903;
+    }
+}
+
+.refAdvancedStats {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .advancedStatsOuter {
+        font-size: 15px;
+    }
+}
+
+.refPhoto {
+    padding-right: 10px;
+}
+
+.refNameNumber {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .refNameNumber {
+        font-size: 25px;
+    }
+}
+
+.refAdditionalBaseInfo {
+    font-size: 17px;
+}
+
+@media (max-width: 768px) {
+    .refAdditionalBaseInfo {
+        font-size: 15px;
+    }
+}
+
+.advancedStatsOuter {
+    width: fit-content;
+    background-color: #fc5903;
+    border-radius: 0.2em;
+    padding: 1em 1.5em 1em 1.5em;
+}
+
+@media (max-width: 768px) {
+    .advancedStatsOuter {
+        border-radius: 0.2em;
+        padding: 0.35em 0.5em 0.35em 0.5em;
+    }
+}
+
+.advancedStatsInner {
+    display: flex;
+    background-color: #d9dcdf;
+    border-radius: 0.2em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    justify-content: center;
+    width: 100%;
+
+    div {
+        color: #10172A;
+    }
+}
+
+@media (max-width: 768px) {
+    .advancedStatsInner {
+        padding: 0.25em 0.25em 0.25em 0.25em;
+    }
+}
+
+.firstBaseStats {
+    div {
+        color: #10172A;
+    }
+
+    margin-right: 35px;
+}
+
+.refInfoPhoto {
+	width: 200px;
+	height: 200px;
+	border-radius: 25px;
+    border: 10px solid #fc5903;
+}
+
+@media (max-width: 768px) {
+    .refInfoPhoto {
+        width: 150px;
+	    height: 150px;
+	    border-radius: 20px;
+        border: 7px solid #fc5903;
+    }
+
+    .refBaseInfo {
+        width: 100%;
+        display: flex;
+    }
+}
+
+.container {
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+  }
+  
+  .containerDark {
+    background-color: #313131;
+  }
